@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Salicorne.dev</title>
+    <link>https://salicorne/github.io/posts/</link>
+    <description>Recent content in Posts on Salicorne.dev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Mon, 30 Nov 2020 21:16:25 +0100</lastBuildDate><atom:link href="https://salicorne/github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello World</title>
+      <link>https://salicorne/github.io/posts/hello-world/</link>
+      <pubDate>Mon, 30 Nov 2020 21:16:25 +0100</pubDate>
+      
+      <guid>https://salicorne/github.io/posts/hello-world/</guid>
+      <description>C&#39;est pas parce qu&#39;on a rien à dire qu&#39;il faut rester silencieux : nouvelle version du site, mi base de connaissances mi blog. Buildé avec Hugo, hébergé par GitHub, structuré par markdown et bientôt automatisé, ce site est à l&amp;rsquo;image du Cloud(tm) en 2020 : beaucoup trop complexe pour ce qu&amp;rsquo;il fait mais avec plein de technos dedans. Il remplira tout de même très bien ses deux fonctions : me servir de base de connaissance pour alléger mes mémos, et acceuillir des rants pour pas qu&amp;rsquo;elles finissent ailleurs.</description>
+    </item>
+    
+  </channel>
+</rss>
