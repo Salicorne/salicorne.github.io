@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Kubectl Aliases - Salicorne.dev</title>
+<meta name="description" content="Utilisant kubectl au quotidien, et étant de nature feignante prompt à automatiser, j&amp;rsquo;ai rapidement mis en place une liste d&amp;rsquo;alias pour me simplifier la vie. Cette liste est évidemment ammenée à évoluer, mais voilà déjà un début !
+Kubectl # Commandes basiques alias k=&amp;#39;kubectl&amp;#39; alias kg=&amp;#39;kubectl get&amp;#39; alias ka=&amp;#39;kubectl apply&amp;#39; alias kl=&amp;#39;kubectl logs --tail 100&amp;#39; alias ke=&amp;#39;kubectl exec -it&amp;#39; alias ked=&amp;#39;kubectl edit&amp;#39; alias kdesc=&amp;#39;kubectl describe&amp;#39; alias kdel=&amp;#39;kubectl delete&amp;#39; # Commandes de supervision, si xxx est installé sur le cluster alias ktop=&amp;#39;kubectl top&amp;#39; alias ktopp=&amp;#39;kubectl top pods --all-namespaces&amp;#39; # Commandes de configuration, pratiques pour jongler entre plusieurs clusters !"/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="https://salicorne.github.io/posts/kubectl-aliases/" />
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="Utilisant kubectl au quotidien, et étant de nature feignante prompt à automatiser, j&amp;rsquo;ai rapidement mis en place une liste d&amp;rsquo;alias pour me simplifier la vie. Cette liste est évidemment ammenée à évoluer, mais voilà déjà un début !
+Kubectl # Commandes basiques alias k=&amp;#39;kubectl&amp;#39; alias kg=&amp;#39;kubectl get&amp;#39; alias ka=&amp;#39;kubectl apply&amp;#39; alias kl=&amp;#39;kubectl logs --tail 100&amp;#39; alias ke=&amp;#39;kubectl exec -it&amp;#39; alias ked=&amp;#39;kubectl edit&amp;#39; alias kdesc=&amp;#39;kubectl describe&amp;#39; alias kdel=&amp;#39;kubectl delete&amp;#39; # Commandes de supervision, si xxx est installé sur le cluster alias ktop=&amp;#39;kubectl top&amp;#39; alias ktopp=&amp;#39;kubectl top pods --all-namespaces&amp;#39; # Commandes de configuration, pratiques pour jongler entre plusieurs clusters !" />
+<meta name="twitter:title" content="Kubectl Aliases - Salicorne.dev" />
+<meta name="twitter:site" content="" />
+<meta name="twitter:creator" content="" />
+
+
+<meta property="og:type" content="article" />
+<meta content="Kubectl Aliases - Salicorne.dev" property="og:title">
+<meta content="Utilisant kubectl au quotidien, et étant de nature feignante prompt à automatiser, j&amp;rsquo;ai rapidement mis en place une liste d&amp;rsquo;alias pour me simplifier la vie. Cette liste est évidemment ammenée à évoluer, mais voilà déjà un début !
+Kubectl # Commandes basiques alias k=&amp;#39;kubectl&amp;#39; alias kg=&amp;#39;kubectl get&amp;#39; alias ka=&amp;#39;kubectl apply&amp;#39; alias kl=&amp;#39;kubectl logs --tail 100&amp;#39; alias ke=&amp;#39;kubectl exec -it&amp;#39; alias ked=&amp;#39;kubectl edit&amp;#39; alias kdesc=&amp;#39;kubectl describe&amp;#39; alias kdel=&amp;#39;kubectl delete&amp;#39; # Commandes de supervision, si xxx est installé sur le cluster alias ktop=&amp;#39;kubectl top&amp;#39; alias ktopp=&amp;#39;kubectl top pods --all-namespaces&amp;#39; # Commandes de configuration, pratiques pour jongler entre plusieurs clusters !" property="og:description">
+<meta property="og:url" content="https://salicorne.github.io/posts/kubectl-aliases/" />
+<meta property="og:site_name" content="Salicorne.dev" />
+<meta property="article:section" content="kubernetes" /><meta property="article:section" content="tech" />
+<meta property="article:published_time" content="2020-12-01 11:55:24 &#43;0100 CET" />
+
+
+
+
+
+<script type="application/ld+json">
+{ 
+    "@context": "http://schema.org", 
+    "@type": "BlogPosting",
+    "headline": "Kubectl Aliases",
+    "genre": "kubernetestech",  
+    "url": "https:\/\/salicorne.github.io\/posts\/kubectl-aliases\/",
+    "datePublished": "2020-12-01 11:55:24 \u002b0100 CET",
+    "description": "Utilisant kubectl au quotidien, et étant de nature feignante prompt à automatiser, j\u0026rsquo;ai rapidement mis en place une liste d\u0026rsquo;alias pour me simplifier la vie. Cette liste est évidemment ammenée à évoluer, mais voilà déjà un début !\nKubectl # Commandes basiques alias k=\u0026#39;kubectl\u0026#39; alias kg=\u0026#39;kubectl get\u0026#39; alias ka=\u0026#39;kubectl apply\u0026#39; alias kl=\u0026#39;kubectl logs --tail 100\u0026#39; alias ke=\u0026#39;kubectl exec -it\u0026#39; alias ked=\u0026#39;kubectl edit\u0026#39; alias kdesc=\u0026#39;kubectl describe\u0026#39; alias kdel=\u0026#39;kubectl delete\u0026#39; # Commandes de supervision, si xxx est installé sur le cluster alias ktop=\u0026#39;kubectl top\u0026#39; alias ktopp=\u0026#39;kubectl top pods --all-namespaces\u0026#39; # Commandes de configuration, pratiques pour jongler entre plusieurs clusters !",
+    "author": {
+        "@type": "Person",
+        "name": ""
+    }
+ }
+</script>
+
+
+
+
+<link rel="stylesheet" href="/sass/main.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/custom.css">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://salicorne.github.io/">Salicorne.dev</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://salicorne.github.io/pages/about/">&Agrave; propos</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+</header>
+
+
+    <div class="container">
+      <div class="wrapper">
+        
+<div class="row">
+<div class="col-md-8">
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+          <header class="post-header">
+            <h1 class="post-title" itemprop="name headline">Kubectl Aliases</h1>
+            <p class="post-meta"><time datetime='2020-12-01T11:55:24&#43;01:00' itemprop="datePublished">1 décembre 2020</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Salicorne</span></span></p>
+                 
+          </header>
+
+          <div class="post-content" itemprop="articleBody">
+            <p>Utilisant kubectl au quotidien, et étant <del>de nature feignante</del> prompt à automatiser, j&rsquo;ai rapidement mis en place une liste d&rsquo;alias pour me simplifier la vie. Cette liste est évidemment ammenée à évoluer, mais voilà déjà un début !</p>
+<h2 id="kubectl">Kubectl</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Commandes basiques</span>
+alias k<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;kubectl&#39;</span>
+alias kg<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;kubectl get&#39;</span>
+alias ka<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;kubectl apply&#39;</span>
+alias kl<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;kubectl logs --tail 100&#39;</span>
+alias ke<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;kubectl exec -it&#39;</span>
+alias ked<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;kubectl edit&#39;</span>
+alias kdesc<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;kubectl describe&#39;</span>
+alias kdel<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;kubectl delete&#39;</span>
+
+<span style="color:#75715e"># Commandes de supervision, si xxx est installé sur le cluster</span>
+alias ktop<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;kubectl top&#39;</span>
+alias ktopp<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;kubectl top pods --all-namespaces&#39;</span>
+
+<span style="color:#75715e"># Commandes de configuration, pratiques pour jongler entre plusieurs clusters !</span>
+alias kx<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;kubectl config use-context&#39;</span>
+alias kns<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;kubectl config set-context --current --namespace&#39;</span>
+
+<span style="color:#75715e"># Lance un pod Alpine dans le namespace actuel et s&#39;y attache, supprime le pod ensuite.</span>
+alias kdbg<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;kubectl run -it --rm --restart=Never alpine --image alpine sh&#39;</span>
+
+<span style="color:#75715e"># Utilise VS-Code comme éditeur, uniquement si on est dans un terminal géré par Code.</span>
+<span style="color:#75715e"># L&#39;édition se fera dans la fenêtre actuelle. </span>
+<span style="color:#75715e"># L&#39;option --wait est nécessaire pour que Code garde la main sur la commande jusqu&#39;à ce que l&#39;onglet d&#39;édition soit fermé !</span>
+<span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> $commands<span style="color:#f92672">[</span>code<span style="color:#f92672">]</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+  export KUBE_EDITOR<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;code --wait&#34;</span> 
+<span style="color:#66d9ef">fi</span>
+
+<span style="color:#75715e"># Charge la complétion de kubectl et Helm</span>
+source &lt;<span style="color:#f92672">(</span>kubectl completion zsh<span style="color:#f92672">)</span>
+source &lt;<span style="color:#f92672">(</span>helm completion zsh<span style="color:#f92672">)</span>
+</code></pre></div><p>Ces quelques commandes permettent de pas mal simplifier les opérations du quotidien : plus rapide de taper <code>kg po -A</code> plutôt que <code>kubectl get pods --all-namespaces</code> pour vérifier l&rsquo;état du cluster !</p>
+<hr>
+<h2 id="nginx-ingress-controller">Nginx Ingress Controller</h2>
+<p>Quelques alias sont également pratiques pour les clusters qui utilisent <a href="https://kubernetes.github.io/ingress-nginx/">Nginx Ingress Controller</a> :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Affiche la chaine de certification (à adapter selon le nom de secret utilisé) :</span>
+alias ngx_ca<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;kubectl get secret -n ingress-nginx ca-secret -o jsonpath={.data.ca\.crt} | base64 -d&#39;</span>
+
+<span style="color:#75715e"># Si une CRL est utilisée, elle vit dans le même secret et peut être affichée de la même façon :</span>
+alias ngx_crl<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;kubectl get secret -n ingress-nginx ca-secret -o jsonpath={.data.ca\.crl} | base64 -d&#39;</span>
+
+<span style="color:#75715e"># Redémarrage progressif de l&#39;ingress controller</span>
+alias ngx_rollout<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;kubectl rollout restart deploy nginx-ingress-controller -n ingress-nginx&#39;</span>
+</code></pre></div>
+          </div>
+
+    </article>
+    <div class="row">
+        
+    </div>
+    
+    <div class="row">
+            <ul class="pager">
+             
+              
+                <li><a class="previous" href="https://salicorne.github.io/posts/hello-world/">Hello World &raquo;</a></li>
+              
+            </ul>
+    </div>
+</div>
+
+
+<div class="col-md-4 mt20">
+        <div class="post-img">
+            
+            
+              
+                <img width="100%" src="/posts/kubectl-aliases/kube.png" alt="kube.png">
+              
+            
+            
+        </div>
+            
+        
+        <div class="mt10 recent">
+            <h2>Derniers posts</h2>        
+             <ul>
+                
+
+                      <li>
+                      <p><a href="https://salicorne.github.io/posts/kubectl-aliases/">Kubectl Aliases</a><small>&nbsp;&nbsp;1 décembre 2020</small></p>
+                      </li>
+
+                
+
+                      <li>
+                      <p><a href="https://salicorne.github.io/posts/hello-world/">Hello World</a><small>&nbsp;&nbsp;30 novembre 2020</small></p>
+                      </li>
+
+                
+              </ul>
+        </div>
+        
+        <br>
+
+</div>
+
+</div>
+
+
+
+
+      </div>
+    </div>
+
+    <footer>
+    <div class="container">
+        <div class="row p20">
+            
+
+            <div class="col-md-4 text-center mt25" >
+                
+            </div>
+            <div class="col-md-4 text-center mt25">
+               
+               
+               
+               
+                <a target="_blank" href="https://github.com/Salicorne"><li class="social github"><i class="fa fa-github-square"></i></li></a>
+                
+               
+               <a target="_blank" href="https://instagram.com/lesalicorne"><li class="social"><i class="fa fa-instagram"></i></li></a>
+               
+               
+            </div>
+
+        </div> 
+    </div>
+</footer>
+    
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="https://salicorne.github.io//js/bootstrap.min.js"></script>
+  
+  </body>
+
+</html>

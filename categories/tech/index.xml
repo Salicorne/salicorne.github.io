@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Salicorne.dev</title>
-    <link>https://salicorne.github.io/posts/</link>
-    <description>Recent content in Posts on Salicorne.dev</description>
+    <title>tech on Salicorne.dev</title>
+    <link>https://salicorne.github.io/categories/tech/</link>
+    <description>Recent content in tech on Salicorne.dev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
-    <lastBuildDate>Tue, 01 Dec 2020 11:55:24 +0100</lastBuildDate><atom:link href="https://salicorne.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Dec 2020 11:55:24 +0100</lastBuildDate><atom:link href="https://salicorne.github.io/categories/tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kubectl Aliases</title>
       <link>https://salicorne.github.io/posts/kubectl-aliases/</link>
@@ -15,15 +15,6 @@
       <guid>https://salicorne.github.io/posts/kubectl-aliases/</guid>
       <description>Utilisant kubectl au quotidien, et étant de nature feignante prompt à automatiser, j&amp;rsquo;ai rapidement mis en place une liste d&amp;rsquo;alias pour me simplifier la vie. Cette liste est évidemment ammenée à évoluer, mais voilà déjà un début !
 Kubectl # Commandes basiques alias k=&amp;#39;kubectl&amp;#39; alias kg=&amp;#39;kubectl get&amp;#39; alias ka=&amp;#39;kubectl apply&amp;#39; alias kl=&amp;#39;kubectl logs --tail 100&amp;#39; alias ke=&amp;#39;kubectl exec -it&amp;#39; alias ked=&amp;#39;kubectl edit&amp;#39; alias kdesc=&amp;#39;kubectl describe&amp;#39; alias kdel=&amp;#39;kubectl delete&amp;#39; # Commandes de supervision, si xxx est installé sur le cluster alias ktop=&amp;#39;kubectl top&amp;#39; alias ktopp=&amp;#39;kubectl top pods --all-namespaces&amp;#39; # Commandes de configuration, pratiques pour jongler entre plusieurs clusters !</description>
-    </item>
-    
-    <item>
-      <title>Hello World</title>
-      <link>https://salicorne.github.io/posts/hello-world/</link>
-      <pubDate>Mon, 30 Nov 2020 21:16:25 +0100</pubDate>
-      
-      <guid>https://salicorne.github.io/posts/hello-world/</guid>
-      <description>C&amp;rsquo;est pas parce qu&amp;rsquo;on a rien à dire qu&amp;rsquo;il faut rester silencieux : nouvelle version du site, mi base de connaissances mi blog. Buildé avec Hugo, hébergé par GitHub, structuré par markdown et bientôt automatisé, ce site est à l&amp;rsquo;image du Cloud(tm) en 2020 : beaucoup trop complexe pour ce qu&amp;rsquo;il fait mais avec plein de technos dedans. Il remplira tout de même très bien ses deux fonctions : me servir de base de connaissance pour alléger mes mémos, et acceuillir des rants pour pas qu&amp;rsquo;elles finissent ailleurs.</description>
     </item>
     
   </channel>
