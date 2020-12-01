@@ -14,7 +14,7 @@
       
       <guid>https://salicorne.github.io/posts/kubectl-aliases/</guid>
       <description>Utilisant kubectl au quotidien, et étant de nature feignante prompt à automatiser, j&amp;rsquo;ai rapidement mis en place une liste d&amp;rsquo;alias pour me simplifier la vie. Cette liste est évidemment ammenée à évoluer, mais voilà déjà un début !
-Kubectl # Commandes basiques alias k=&amp;#39;kubectl&amp;#39; alias kg=&amp;#39;kubectl get&amp;#39; alias ka=&amp;#39;kubectl apply&amp;#39; alias kl=&amp;#39;kubectl logs --tail 100&amp;#39; alias ke=&amp;#39;kubectl exec -it&amp;#39; alias ked=&amp;#39;kubectl edit&amp;#39; alias kdesc=&amp;#39;kubectl describe&amp;#39; alias kdel=&amp;#39;kubectl delete&amp;#39; # Commandes de supervision, si xxx est installé sur le cluster alias ktop=&amp;#39;kubectl top&amp;#39; alias ktopp=&amp;#39;kubectl top pods --all-namespaces&amp;#39; # Commandes de configuration, pratiques pour jongler entre plusieurs clusters !</description>
+Kubectl # Commandes basiques alias k=&amp;#39;kubectl&amp;#39; alias kg=&amp;#39;kubectl get&amp;#39; alias ka=&amp;#39;kubectl apply&amp;#39; alias kl=&amp;#39;kubectl logs --tail 100&amp;#39; alias ke=&amp;#39;kubectl exec -it&amp;#39; alias ked=&amp;#39;kubectl edit&amp;#39; alias kdesc=&amp;#39;kubectl describe&amp;#39; alias kdel=&amp;#39;kubectl delete&amp;#39; # Commandes de supervision, si le metrics-server est installé sur le cluster alias ktop=&amp;#39;kubectl top&amp;#39; alias ktopp=&amp;#39;kubectl top pods --all-namespaces&amp;#39; # Commandes de configuration, pratiques pour jongler entre plusieurs clusters !</description>
     </item>
     
     <item>
