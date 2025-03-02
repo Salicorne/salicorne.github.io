@@ -39,7 +39,7 @@ rss = true
 pagination = "10"
 hideAuthor = true
 description="Your can add your website description here."
-previewCardImagePlacement = "bottom"
+previewCardImagePlacement = "top"
 showPostImage = false
 
 [Params.Author]
