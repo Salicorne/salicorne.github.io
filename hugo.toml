@@ -13,7 +13,7 @@ pygmentsCodefencesGuessSyntax = true
 #pygmentsUseClassic = true
 #pygmentOptions = "linenos=inline"
 enableRobotsTXT = true
-enableGitInfo = false
+enableGitInfo = true
 summaryLength  = "30"
 ignoreLogs = ['warning-goldmark-raw-html']
 
@@ -44,16 +44,17 @@ showPostImage = false
 
 [Params.Author]
   name = "Salicorne"
-  website = "https://www.binovarghese.com/"
-  authorInfo = "Live your life as though every moment matters, because in the end, it's not the years in your life, but the life in your years that counts."
-  authorPostImage = "/img/author-post-img.jpg"
-  email = "sample@gmail.com"
-  facebook = "username"
-  instagram = "username"
-  youtube = "user/username" # or channel/channelname
+  website = "https://salicorne.github.io/"
+  authorInfo = "Salicorne"
+#  authorPostImage = "/img/author-post-img.jpg"
+#  email = "sample@gmail.com"
+#  facebook = "username"
+#  instagram = "username"
+#  youtube = "user/username" # or channel/channelname
 #  twitter = "username"
-  linkedin = "username"
-  github = "username"
+  linkedin = "timothee.raboeuf"
+  github = "Salicorne"
+  bluesky = "leSalicorne"
 #  threads = "username"
 #  gitlab = "username"
 #  reddit = "username"
