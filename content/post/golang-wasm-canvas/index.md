@@ -2,7 +2,7 @@
 title: Golang, Canvas and WebAssembly
 date: 2025-03-02
 tags: ["development", "art"]
-image : "/img/canvas.png"
+image : "canvas.png"
 Description  : "How to draw on an HTML5 canvas with Golang and WebAssembly"
 ---
 
