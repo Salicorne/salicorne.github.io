@@ -1,9 +1,25 @@
 #canvas {
   height: 100%;
   width: 100%;
+  position: absolute;
 }
 
 * { 
   margin:0; 
   padding:0; 
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#settings {
+  border: 1px solid black;
+  position: absolute;
+  background-color: white;
+}
+
+#loader {
+  font-size: 3em;
+}
+
+#container {
+  position: relative;
 }

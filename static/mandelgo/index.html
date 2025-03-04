@@ -2,6 +2,7 @@
   <head>
     <meta charset="utf-8"/>
     <script src="wasm_exec.js"></script>
+    <link rel="stylesheet" href="index.css" />
     <script>
       const go = new Go();
       WebAssembly.instantiateStreaming(fetch("mandelgo-web.wasm"), go.importObject).then((result) => {
@@ -14,14 +15,23 @@
         canvas.addEventListener('click', function(event) {
           var x = event.pageX - elemLeft,
               y = event.pageY - elemTop;
-          wasm_onclick(x, y);
+          requestAnimationFrame(() => {
+            document.getElementById("loader").innerText = "Loading...";
+            requestAnimationFrame(() => {
+              wasm_onclick(x, y);
+            });
+          });
         }, false);
       });
     </script>
-    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <canvas id="canvas">HTML5 canvas is not supported on this browser</canvas>
+    <div id=""container>
+      <noscript>You need to enable JavaScript to run this app.</noscript>
+      <canvas id="canvas">HTML5 canvas is not supported on this browser</canvas>
+      <div id="settings">
+        <p id="loader">Loading...</p>
+      </div>
+    </div>
   </body>
 </html>
